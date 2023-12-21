@@ -17,7 +17,6 @@ end
 # API authentication
 gem 'bcrypt' # For hashing passwords
 gem 'jwt'   # For JWT authentication
-gem 'cancancan' # For authorization
 
 # For environment variables
 gem 'dotenv-rails', groups: [:development, :test]

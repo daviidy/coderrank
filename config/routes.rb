@@ -15,5 +15,8 @@ Rails.application.routes.draw do
     delete '/logout', to: 'sessions#destroy'
   end
   resources :challenges
+  resources :comments
   post '/admin', to: 'users#add_admin'
+  # create route for challenge_comments in comments controller
+  get '/challenge_comments/:challenge_id', to: 'comments#challenge_comments'
 end
