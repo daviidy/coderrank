@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   end
   resources :challenges
   resources :comments
+  resources :cases
   post '/admin', to: 'users#add_admin'
   # create route for challenge_comments in comments controller
   get '/challenge_comments/:challenge_id', to: 'comments#challenge_comments'

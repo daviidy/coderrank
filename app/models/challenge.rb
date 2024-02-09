@@ -5,4 +5,5 @@ class Challenge < ApplicationRecord
     has_many :challenge_categories
     has_many :categories, through: :challenge_categories
     has_many :comments, dependent: :destroy
+    has_many :cases, dependent: :destroy
 end
